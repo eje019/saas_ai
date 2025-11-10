@@ -1,9 +1,14 @@
 import React from "react";
+import { Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <h1>Welcome to the React Application!</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 };
