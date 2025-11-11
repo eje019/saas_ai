@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { assets } from "../assets/assets";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Navbar = () => {
         className="text-xl font-bold text-gray-800 cursor-pointer"
         onClick={() => navigate("/")}
       >
-        🚀 MON APP
+        <img src={assets.logo} alt="" />
       </div>
 
       {/* Bouton */}
