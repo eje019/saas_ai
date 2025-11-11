@@ -28,8 +28,11 @@ const App = () => {
           <Route path="community" element={<Community />} />
         </Route>
 
-        {/* Route 404 au cas ou */}
-        <Route path="*" element={<div>Page non trouvée</div>} />
+        {/* Route 404 */}
+        <Route
+          path="*"
+          element={<div className="p-8 text-center">Page non trouvée</div>}
+        />
       </Routes>
     </div>
   );
