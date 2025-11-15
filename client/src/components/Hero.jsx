@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { assets } from "../assets/assets";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -25,9 +26,14 @@ const Hero = () => {
         >
           Commencez par créer maintenant
         </button>
-        <button className="bg-white px-10 py-3 rounded-lg border border-gray hover:scale-102 active:scale-95 transition cursor-pointer">
+        <button className="bg-white px-10 py-3 rounded-lg border border-gray-400 hover:scale-102 active:scale-95 transition cursor-pointer">
           Regardez une demo
         </button>
+      </div>
+
+      <div className="flex items-center gap-4 mt-8 mx-auto text-gray-600">
+        <img src={assets.user_group} alt="" className="h-8" />
+        Utilisé par plus de 10,000 créateurs et entreprises
       </div>
     </div>
   );
