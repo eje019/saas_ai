@@ -10,7 +10,7 @@ const Navbar = () => {
   const { openSignIn } = useClerk();
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-white border-b border-gray-300 py-4 px-6 flex justify-between items-center z-50 shadow-lg">
+    <div className="fixed top-0 left-0 w-full bg-white border-b border-gray-300 py-2 px-6 flex justify-between items-center z-50 shadow-lg">
       <img
         src={assets.logo}
         alt="logo"
